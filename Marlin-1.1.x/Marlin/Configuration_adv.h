@@ -214,7 +214,7 @@
  * Multiple extruders can be assigned to the same pin in which case
  * the fan will turn on when any selected extruder is above the threshold.
  */
-#define E0_AUTO_FAN_PIN -1
+#define E0_AUTO_FAN_PIN 11
 #define E1_AUTO_FAN_PIN -1
 #define E2_AUTO_FAN_PIN -1
 #define E3_AUTO_FAN_PIN -1
@@ -388,7 +388,7 @@
 // @section lcd
 
 #if ENABLED(ULTIPANEL)
-  #define MANUAL_FEEDRATE {50*60, 50*60, 4*60, 60} // Feedrates for manual moves along X, Y, Z, E from panel
+  #define MANUAL_FEEDRATE {50*60, 50*60, 4*60, 1000} // Feedrates for manual moves along X, Y, Z, E from panel
   #define ULTIPANEL_FEEDMULTIPLY  // Comment to disable setting feedrate multiplier via encoder
 #endif
 

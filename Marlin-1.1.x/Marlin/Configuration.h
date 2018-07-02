@@ -357,9 +357,9 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
-    #define  DEFAULT_Kp 12.73
-    #define  DEFAULT_Ki 0.42
-    #define  DEFAULT_Kd 95.72
+    #define  DEFAULT_Kp 24.20
+    #define  DEFAULT_Ki 2.48
+    #define  DEFAULT_Kd 58.97
   // Ultimaker
  // #define  DEFAULT_Kp 22.2
   //#define  DEFAULT_Ki 1.08
@@ -546,7 +546,7 @@
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,2560,140}  // default steps per unit for Ultimaker
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,2560,830}  // default steps per unit for Ultimaker
 /**
  * Default Max Feed Rate (mm/s)
  * Override with M203
@@ -701,7 +701,7 @@
  */
 #define X_PROBE_OFFSET_FROM_EXTRUDER 25  // X offset: -left  +right  [of the nozzle]
 #define Y_PROBE_OFFSET_FROM_EXTRUDER 0  // Y offset: -front +behind [the nozzle]
-#define Z_PROBE_OFFSET_FROM_EXTRUDER -5   // Z offset: -below +above  [the nozzle]
+#define Z_PROBE_OFFSET_FROM_EXTRUDER -3.05   // Z offset: -below +above  [the nozzle]
 
 
 
@@ -778,7 +778,7 @@
 // @section extruder
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
-#define INVERT_E0_DIR false
+#define INVERT_E0_DIR true
 #define INVERT_E1_DIR false
 #define INVERT_E2_DIR false
 #define INVERT_E3_DIR false

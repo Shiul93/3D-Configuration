@@ -15,8 +15,8 @@
 // User-specified version info of this build to display in [Pronterface, etc] terminal window during
 // startup. Implementation of an idea by Prof Braino to inform user that any changes made to this
 // build by the user have been successfully uploaded into firmware.
-#define STRING_VERSION_CONFIG_H __DATE__ "23/04/2015 " __TIME__ // build date and time
-#define STRING_CONFIG_H_AUTHOR "RRio& JSeco" // Who made the changes.
+#define STRING_VERSION_CONFIG_H __DATE__ "19/03/2018 " __TIME__ // build date and time
+#define STRING_CONFIG_H_AUTHOR "Shiul93" // Who made the changes.
 
 // SERIAL_PORT selects which serial port should be used for communication with the host.
 // This allows the connection of wireless adapters (for instance) to non-default port pins.
@@ -172,9 +172,9 @@
 
 // If you are using a preconfigured hotend then you can use one of the value sets by uncommenting it
 // Ultimaker
-    #define  DEFAULT_Kp 22.2
-    #define  DEFAULT_Ki 1.08
-    #define  DEFAULT_Kd 114
+    #define  DEFAULT_Kp 12.73
+    #define  DEFAULT_Ki 0.42
+    #define  DEFAULT_Kd 95.72
 
 // Makergear
 //    #define  DEFAULT_Kp 7.0
@@ -325,22 +325,22 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 
   // these are the positions on the bed to do the probing
   #define LEFT_PROBE_BED_POSITION 30
-  #define RIGHT_PROBE_BED_POSITION 225
+  #define RIGHT_PROBE_BED_POSITION 200
   #define BACK_PROBE_BED_POSITION 215
   #define FRONT_PROBE_BED_POSITION 30
 
   // these are the offsets to the prob relative to the extruder tip (Hotend - Probe)
   #define X_PROBE_OFFSET_FROM_EXTRUDER 20
   #define Y_PROBE_OFFSET_FROM_EXTRUDER 5
-  #define Z_PROBE_OFFSET_FROM_EXTRUDER -11.5
+  #define Z_PROBE_OFFSET_FROM_EXTRUDER -24.75
 
-  #define Z_RAISE_BEFORE_HOMING 25       // (in mm) Raise Z before homing (G28) for Probe Clearance.
+  #define Z_RAISE_BEFORE_HOMING 35       // (in mm) Raise Z before homing (G28) for Probe Clearance.
                                         // Be sure you have this distance over your Z_MAX_POS in case
 
   #define XY_TRAVEL_SPEED 8000         // X and Y axis travel speed between probes, in mm/min
 
-  #define Z_RAISE_BEFORE_PROBING 25    //How much the extruder will be raised before traveling to the first probing point.
-  #define Z_RAISE_BETWEEN_PROBINGS 25  //How much the extruder will be raised when traveling from between next probing points
+  #define Z_RAISE_BEFORE_PROBING 35    //How much the extruder will be raised before traveling to the first probing point.
+  #define Z_RAISE_BETWEEN_PROBINGS 35  //How much the extruder will be raised when traveling from between next probing points
 
 
   //If defined, the Probe servo will be turned on only during movement and then turned off to avoid jerk
@@ -374,7 +374,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
   
   #ifdef ACCURATE_BED_LEVELING
      // I wouldn't see a reason to go above 3 (=9 probing points on the bed)
-    #define ACCURATE_BED_LEVELING_POINTS 3
+    #define ACCURATE_BED_LEVELING_POINTS 2
   #endif
   
 #endif
@@ -433,11 +433,11 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 // Preheat Constants
 #define PLA_PREHEAT_HOTEND_TEMP 210
 #define PLA_PREHEAT_HPB_TEMP 50
-#define PLA_PREHEAT_FAN_SPEED 255   // Insert Value between 0 and 255
+#define PLA_PREHEAT_FAN_SPEED 128   // Insert Value between 0 and 255
 
 #define ABS_PREHEAT_HOTEND_TEMP 240
 #define ABS_PREHEAT_HPB_TEMP 50
-#define ABS_PREHEAT_FAN_SPEED 255   // Insert Value between 0 and 255
+#define ABS_PREHEAT_FAN_SPEED 128   // Insert Value between 0 and 255
 
 //LCD and SD support
 //#define ULTRA_LCD  //general lcd support, also 16x2
